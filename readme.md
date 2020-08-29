@@ -43,6 +43,7 @@ And you have to looking this lines of code:
     DB_USERNAME=root
     DB_PASSWORD=
 ```
+For more information about to change the configuration you can visit the next link:  [Conection of Database Laravel 5.8](https://laravel.com/docs/5.8/database#read-and-write-connections)
 There you have to put your configuration of connecton to database, you most be created before a database with this name "libareria" or the other if you want.
 (In this case, i am using MySQL by default)
 - You shuld to move to this rout: "our_server\Library\" or "Our_server/Library/" at the console or terminal of your serve.
@@ -59,4 +60,4 @@ And the next for prove this proyect
     php artisan serve
 
 ```
- and you shold go tho this rout of yout browser "127.0.0.1:8000" and the proyect will be deployed now.
+ and you shold go to this rout of your browser "127.0.0.1:8000" and the proyect will be deployed now.
