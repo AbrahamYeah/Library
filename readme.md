@@ -25,7 +25,7 @@ not available (use a modal for this feature).
 For you can install this project you need to take the next:
 
 - PHP v 7.1 or superior
-- MySQL or other type of BD. (You most consider the install at PHP)
+- MySQL or other type of BD. (You shold consider the installation at PHP)
 - Apache (You can use Xampp)
 
 The Steps are the next:
