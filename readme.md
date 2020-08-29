@@ -44,7 +44,7 @@ And you have to looking this lines of code:
     DB_PASSWORD=
 ```
 There you have to put your configuration of connecton to database, you most be created before a database with this name "libareria" or the other if you want.
-(In this case are MySQL default)
+(In this case, i am using MySQL by default)
 - You shuld to move to this rout: "our_server\Library\" or "Our_server/Library/" at the console or terminal of your serve.
 and write the next comands:
 
