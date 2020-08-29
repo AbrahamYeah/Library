@@ -1,6 +1,8 @@
-# Library
+# LIBRARY
  
 This system is about the simple Library, with the next caracteristics:
+
+# SPECIFICATIONS
 
 - A book has: name, author, category (select with
 autocomplete), published date, user (person that

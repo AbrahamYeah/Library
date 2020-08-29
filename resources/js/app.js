@@ -18,9 +18,16 @@ window.Vue = require('vue');
 
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
-
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 import filterbooks from './components/FilterBooksComponent.vue';
+import Vue from 'vue'
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 
+// Install BootstrapVue
+Vue.use(BootstrapVue)
+// Optionally install the BootstrapVue icon components plugin
+Vue.use(IconsPlugin)
 Vue.component('filterbooks', filterbooks);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -29,5 +36,14 @@ Vue.component('filterbooks', filterbooks);
  */
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    methods: {
+        showModal() {
+         this.$refs['modal-1'].show()
+        }
+      },
+      mounted() {
+        this.showModal();
+        console.log(this.$refs);
+      }
 });

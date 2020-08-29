@@ -48,22 +48,25 @@
 </div>
 
 @if (session('mensaje'))
-<div class="alert alert-success">
-    {{ session('mensaje') }}
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-    </button>
-</div>
+      <div>
+        <b-modal ref="modal-1" id="modal-1" title="Information status"  ok-only>
+            <div class="alert alert-success">
+            <p class="my-4">{{ session('mensaje') }}</p>
+            </div>
+        </b-modal>
+      </div>
 @endif
 
-@if (session('mensaje'))
-<div class="alert alert-warning">
-    {{ session('Error') }}
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-    </button>
-</div>
+@if (session('Error'))
+<div>
+    <b-modal ref="modal-1" id="modal-1" title="Information status" ok-only>
+        <div class="alert alert-warning">
+            <p class="my-4">{{ session('Error') }}</p>
+        </div>
+    </b-modal>
+  </div>
 @endif
+
 
 @if ($errors->any())
 <div class="alert alert-danger alert-dismissible fade show" role="alert">
