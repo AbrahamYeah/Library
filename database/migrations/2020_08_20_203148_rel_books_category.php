@@ -22,8 +22,6 @@ class RelBooksCategory extends Migration
             $table->foreign('idbook')->references('id')->on('Books')->onDelete('cascade');
             $table->foreign('category_id')->references('id')->on('Category')->onDelete('cascade');
         });
-
-
     }
 
     /**
